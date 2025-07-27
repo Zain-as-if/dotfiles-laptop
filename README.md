@@ -25,3 +25,19 @@ dotfiles commit -m 'Initial commit with .bashrc'
 dotfiles remote add origin git@github.com:Zain-as-if/dotfiles-laptop.git
 dotfiles push -u origin main
 ```
+Important Packages:
+Hyprland
+Hyprpanel
+Btop
+Fastfetch
+Htop
+Nvim
+Kitty
+Spotify
+Spicetify
+Starship
+Waypaper
+Wofi
+Hyprcursor
+Hyprpicker
+Hyprlock
