@@ -1,0 +1,151 @@
+{ // Colors: fastfetch --help color 
+  // https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo":{
+      "type": "auto",
+      "source": "~/.config/fastfetch/logos/alohaii.png",
+      "width": 40,
+      "height": 18,
+      "padding": {
+          "top": 1,
+          "left": 2
+      }
+  },
+  "display": {
+      "separator": " | ",
+      "constants": [
+          "─────────────────"
+      ],
+      "key": {
+          "type": "icon",
+          "paddingLeft": 2,
+      }
+  },
+  "modules": [
+      "break",
+      "break",
+      {
+          "type": "custom", //User
+          "format": "┌{$1} {#1}User{#} {$1}┐",
+      },
+    {
+        "type": "title",
+        "format": "Zain",
+        "key": "User",
+        "keyColor": "38;5;183",
+        "outputColor": "38;5;45",
+    },
+    {
+        "type": "datetime",
+        "format": "{11}/{3}/{1}",
+        "key": "",
+        "keyColor": "38;5;183",
+        "outputColor": "38;5;45",
+    },
+    {
+        "type": "datetime",
+        "format": "{14}:{17}:{20}",
+        "key": "",
+        "keyColor": "38;5;183",
+        "outputColor": "38;5;45",
+    },
+    {
+        "type": "custom", //Software
+        "format": "├───────── Software Information ─────────┤",
+    },
+    {
+        "type": "os",
+        "format": "{pretty-name} {version-id}{arch}",
+        "key": "󰣇",
+        "keyColor": "cyan",
+        "keyColor": "38;5;197",
+        "outputColor": "38;5;69",
+    },
+    {
+        "type": "uptime",
+        "key": "",
+        "keyColor": "cyan",
+        "keyColor": "38;5;197",
+        "outputColor": "38;5;69",
+    },
+    {
+        "type": "packages",
+        "key": "󰏖",
+        "format": "Packages {all}",
+        "keyColor": "cyan",
+        "keyColor": "38;5;197",
+        "outputColor": "38;5;69",
+    },
+    {
+        "type": "wm",
+        "key": "",
+        "keyColor": "cyan",
+        "keyColor": "38;5;197",
+        "outputColor": "38;5;69",
+    },
+    {
+        "type": "terminal",
+        "key": "󰄛",
+        "format": "Kitty",
+        "keyColor": "cyan",
+        "keyColor": "38;5;197",
+        "outputColor": "38;5;69",
+    },
+    {
+        "type": "terminalfont",
+        "key": "",
+        "format": "{name}",
+        "keyColor": "cyan",
+        "keyColor": "38;5;197",
+        "outputColor": "38;5;69",
+    },
+    {
+        "type": "cpu",
+        "key": "",
+        "temp": true,
+        "format": "{name} {temperature}",
+        "keyColor": "cyan",
+        "keyColor": "38;5;197",
+        "outputColor": "38;5;69",
+    },
+    {
+        "type": "gpu",
+        "temp": true,
+        "format": "{name} {temperature}",
+        "key": "",
+        "keyColor": "cyan",
+        "keyColor": "38;5;197",
+        "outputColor": "38;5;69",
+    },
+    {
+        "type": "memory",
+        "key": "",
+        "keyColor": "cyan",
+        "keyColor": "38;5;197",
+        "outputColor": "38;5;69",
+    },
+    {
+        "type": "custom",
+        "format": "├{$1} Disk {$1}┤",
+    },
+    {
+        "type": "disk",
+        "folders": "/",
+        "keyColor": "38;5;123",
+        "outputColor": "38;5;205",
+    },
+    {
+            "type": "custom", // InformationEnd
+            "format": "└{$1}──────{$1}┘"
+    },
+    /*
+    "break",
+    {
+        "type": "disk",
+        "key": "",
+        "keyColor": "cyan",
+    },
+    */
+    "break",
+  ]
+}
